@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import ReactSlider from 'react-slider';
 import ToggleButton from './components/ToggleButton';
+import LetterButton from './components/LetterButton';
 
 function App() {
   const [state, setState] = useState({
@@ -16,9 +17,7 @@ function App() {
     <div className='bg-lightBackground border-accent border-4 sm:w-[60vw] h-[70vh] sm:h-[40vh] flex flex-col sm:flex-row'>
       <div className='w-full sm:w-[55%] h-full p-8 grid grid-cols-3 gap-4'>
         {buttonLetters.map((letter) => (
-          <div key={letter} className='bg-primary flex justify-center items-center rounded-md drop-shadow-bold text-[1.25rem]'>
-            {letter}
-          </div>
+          <LetterButton key={letter} letter={letter} />
         ))}
       </div>
 
