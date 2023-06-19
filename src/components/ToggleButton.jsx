@@ -5,8 +5,8 @@ const ToggleButton = ({ text, toggle, onClick}) => {
     <div>
       <p>{text}</p>
       <div
-        className={`bg-black border-4 border-black w-16 h-6 flex justify-start ${
-          !toggle && 'justify-end'
+        className={`bg-black border-4 border-black w-16 h-6 flex ${
+          toggle ? 'justify-end' : 'justify-start'
         }`}
         onClick={onClick}
       >

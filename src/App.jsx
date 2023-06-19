@@ -19,7 +19,9 @@ function App() {
           <LetterButton 
             key={letter} 
             letter={letter}
-            sound={state.bank ? heaterKitSound : smoothKitSound}
+            sound={state.power ?
+              state.bank ? heaterKitSound : smoothKitSound :
+              null}
             volume={state.volume / 100} />
         ))}
       </div>
@@ -65,7 +67,7 @@ function App() {
             setState((prev) => ({
               ...state,
               bank: !prev.bank,
-              lastChange: prev.bank ? 'Bank Off' : 'Bank On'
+              lastChange: prev.bank ? 'Heater Kit' : 'Smooth Piano Kit'
             }))
           }
         />
