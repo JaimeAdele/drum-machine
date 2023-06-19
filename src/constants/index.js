@@ -19,46 +19,64 @@ import sideStick from '../assets/sideStick.mp3';
 
 export const buttons = [
   {
+    smoothKitName: 'Chord 1',
+    heaterKitName: 'Heater 1',
     letter: 'Q',
     smoothKitSound: new Audio(chord1),
     heaterKitSound: new Audio(heater1)
   },
   {
+    smoothKitName: 'Chord 2',
+    heaterKitName: 'Heater 2',
     letter: 'W',
     smoothKitSound: new Audio(chord2),
     heaterKitSound: new Audio(heater2)
   },
   {
+    smoothKitName: 'Chord 3',
+    heaterKitName: 'Heater 3',
     letter: 'E',
     smoothKitSound: new Audio(chord3),
     heaterKitSound: new Audio(heater3)
   },
   {
+    smoothKitName: 'Shaker',
+    heaterKitName: 'Heater 4',
     letter: 'A',
     smoothKitSound: new Audio(shaker),
     heaterKitSound: new Audio(heater4)
   },
   {
+    smoothKitName: 'Open HH',
+    heaterKitName: 'Clap',
     letter: 'S',
     smoothKitSound: new Audio(openHH),
     heaterKitSound: new Audio(clap)
   },
   {
+    smoothKitName: 'Closed HH',
+    heaterKitName: 'Open HH',
     letter: 'D',
     smoothKitSound: new Audio(closedHH),
     heaterKitSound: new Audio(openHH2)
   },
   {
+    smoothKitName: 'Punchy Kick',
+    heaterKitName: "Kick n' Hat",
     letter: 'Z',
     smoothKitSound: new Audio(punchyKick),
     heaterKitSound: new Audio(kickNHat)
   },
   {
+    smoothKitName: 'Side Stick',
+    heaterKitName: 'Kick',
     letter: 'X',
     smoothKitSound: new Audio(sideStick),
     heaterKitSound: new Audio(kick)
   },
   {
+    smoothKitName: 'Snare',
+    heaterKitName: 'Closed HH',
     letter: 'C',
     smoothKitSound: new Audio(snare),
     heaterKitSound: new Audio(closedHH2)

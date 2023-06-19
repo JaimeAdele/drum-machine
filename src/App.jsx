@@ -15,14 +15,19 @@ function App() {
   return (
     <div className='bg-lightBackground border-accent border-4 sm:w-[60vw] h-[70vh] sm:h-[40vh] flex flex-col sm:flex-row'>
       <div className='w-full sm:w-[55%] h-full p-8 grid grid-cols-3 gap-4'>
-        {buttons.map(({ letter, smoothKitSound, heaterKitSound}) => (
+        {buttons.map(({ smoothKitName, heaterKitName, letter, smoothKitSound, heaterKitSound}) => (
           <LetterButton 
             key={letter} 
             letter={letter}
             sound={state.power ?
               state.bank ? heaterKitSound : smoothKitSound :
               null}
-            volume={state.volume / 100} />
+            volume={state.volume / 100}
+            onClick={() => setState(prev => ({
+              ...state, 
+              lastChange: prev.bank ? heaterKitName : smoothKitName
+            }))}
+             />
         ))}
       </div>
 

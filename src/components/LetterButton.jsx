@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const LetterButton = ({ letter, sound, volume }) => {
+const LetterButton = ({ letter, sound, volume, onClick }) => {
   const [buttonColor, setButtonColor] = useState('bg-primary drop-shadow-bold');
 
   return (
@@ -11,9 +11,15 @@ const LetterButton = ({ letter, sound, volume }) => {
         setButtonColor('bg-accent drop-shadow-semiBold');
         sound.volume = volume;
         sound.play();
+        onClick();
       }}
       onMouseUp={() => setButtonColor('bg-primary drop-shadow-bold')}
-      onTouchStart={() => setButtonColor('bg-accent drop-shadow-semiBold')}
+      onTouchStart={() => {
+        setButtonColor('bg-accent drop-shadow-semiBold');
+        sound.volume = volume;
+        sound.play();
+        onClick();
+      }}
       onTouchEnd={() => setButtonColor('bg-primary drop-shadow-bold')}
     >
       {letter}
