@@ -14,7 +14,8 @@ export default {
         russoOne: ['Russo One', 'sans-serif']
       },
       dropShadow: {
-        bold: '3px 3px 3px black'
+        bold: '3px 3px 3px black',
+        semiBold: '1px 1px 3px black'
       }
     },
     screens: {
