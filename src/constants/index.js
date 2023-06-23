@@ -23,62 +23,80 @@ export const buttons = [
     heaterKitName: 'Heater 1',
     letter: 'Q',
     smoothKitSound: new Audio(chord1),
-    heaterKitSound: new Audio(heater1)
+    heaterKitSound: new Audio(heater1),
+    smoothKitSoundLink: chord1,
+    heaterKitSoundLink: heater1
   },
   {
     smoothKitName: 'Chord 2',
     heaterKitName: 'Heater 2',
     letter: 'W',
     smoothKitSound: new Audio(chord2),
-    heaterKitSound: new Audio(heater2)
+    heaterKitSound: new Audio(heater2),
+    smoothKitSoundLink: chord2,
+    heaterKitSoundLink: heater2
   },
   {
     smoothKitName: 'Chord 3',
     heaterKitName: 'Heater 3',
     letter: 'E',
     smoothKitSound: new Audio(chord3),
-    heaterKitSound: new Audio(heater3)
+    heaterKitSound: new Audio(heater3),
+    smoothKitSoundLink: chord3,
+    heaterKitSoundLink: heater3
   },
   {
     smoothKitName: 'Shaker',
     heaterKitName: 'Heater 4',
     letter: 'A',
     smoothKitSound: new Audio(shaker),
-    heaterKitSound: new Audio(heater4)
+    heaterKitSound: new Audio(heater4),
+    smoothKitSoundLink: shaker,
+    heaterKitSoundLink: heater4
   },
   {
     smoothKitName: 'Open HH',
     heaterKitName: 'Clap',
     letter: 'S',
     smoothKitSound: new Audio(openHH),
-    heaterKitSound: new Audio(clap)
+    heaterKitSound: new Audio(clap),
+    smoothKitSoundLink: openHH,
+    heaterKitSoundLink: clap
   },
   {
     smoothKitName: 'Closed HH',
     heaterKitName: 'Open HH',
     letter: 'D',
     smoothKitSound: new Audio(closedHH),
-    heaterKitSound: new Audio(openHH2)
+    heaterKitSound: new Audio(openHH2),
+    smoothKitSoundLink: closedHH,
+    heaterKitSoundLink: openHH2
   },
   {
     smoothKitName: 'Punchy Kick',
     heaterKitName: "Kick n' Hat",
     letter: 'Z',
     smoothKitSound: new Audio(punchyKick),
-    heaterKitSound: new Audio(kickNHat)
+    heaterKitSound: new Audio(kickNHat),
+    smoothKitSoundLink: punchyKick,
+    heaterKitSoundLink: kickNHat
   },
   {
     smoothKitName: 'Side Stick',
     heaterKitName: 'Kick',
     letter: 'X',
     smoothKitSound: new Audio(sideStick),
-    heaterKitSound: new Audio(kick)
+    heaterKitSound: new Audio(kick),
+    smoothKitSoundLink: sideStick,
+    heaterKitSoundLink: kick
   },
   {
     smoothKitName: 'Snare',
     heaterKitName: 'Closed HH',
     letter: 'C',
     smoothKitSound: new Audio(snare),
-    heaterKitSound: new Audio(closedHH2)
+    heaterKitSound: new Audio(closedHH2),
+    smoothKitSoundLink: snare,
+    heaterKitSoundLink: closedHH2
   }
 ];
